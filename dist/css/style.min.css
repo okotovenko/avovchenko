@@ -3129,6 +3129,11 @@ h2 {
 		padding-left: 0
 	}
 
+	.hero__left ul li {
+		padding-left: 17px;
+		background-size: 7px;
+	}
+
 	.hero__right img.hero__img {
 		width: 120%;
 		-webkit-transform: translateX(-14%);
