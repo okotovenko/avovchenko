@@ -559,7 +559,7 @@ h2 {
   font-weight: 400;
   line-height: 120%;
   color: #ffffff;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
   background: url("../img/error.svg") center left no-repeat;
 }
 
@@ -2120,13 +2120,20 @@ h2 {
     padding-left: 0;
   }
 
+  .hero__right img.hero__img {
+    width: 120%;
+    -webkit-transform: translateX(-14%);
+        -ms-transform: translateX(-14%);
+            transform: translateX(-14%);
+  }
+
   .hero button.button {
     margin-left: auto;
     margin-right: auto;
   }
 
   .hero__svg {
-    right: 16%;
+    right: 20%;
   }
 
   .why__items {
@@ -2300,15 +2307,6 @@ h2 {
   .input {
     padding: 0.6875rem 1.1875rem;
     background-color: #f4f4f4;
-  }
-}
-
-@media (max-width: 37.5em) {
-  .hero__right img.hero__img {
-    width: 120%;
-    -webkit-transform: translateX(-10%);
-        -ms-transform: translateX(-10%);
-            transform: translateX(-10%);
   }
 }
 
