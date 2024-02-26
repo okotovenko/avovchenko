@@ -1171,10 +1171,6 @@ h2 {
     font-size: 1rem;
   }
 
-  .hero__right {
-    width: 45.8125rem;
-  }
-
   .hero button.button {
     padding-top: 1rem;
   }
@@ -1559,6 +1555,10 @@ h2 {
     margin-top: -4.375rem;
   }
 
+  .hero__right {
+    width: 45.8125rem;
+  }
+
   .why__container h2 {
     padding-top: 5.5625rem;
   }
@@ -1665,10 +1665,6 @@ h2 {
 
   .hero__left ul span {
     font-size: 0.5rem;
-  }
-
-  .hero__right {
-    width: 25rem;
   }
 
   .hero button.button {
@@ -2514,18 +2510,6 @@ h2 {
 @supports not (font-size: clamp( 0.5rem , 0.3260869565rem  +  0.8695652174vw , 1rem )) {
     .hero__left ul span {
       font-size: calc(0.5rem + 0.5 * (100vw - 20rem) / 57.5);
-    }
-}
-
-@supports (width: clamp( 25rem , 17.7608695652rem  +  36.1956521739vw , 45.8125rem )) {
-    .hero__right {
-      width: clamp( 25rem , 17.7608695652rem  +  36.1956521739vw , 45.8125rem );
-    }
-}
-
-@supports not (width: clamp( 25rem , 17.7608695652rem  +  36.1956521739vw , 45.8125rem )) {
-    .hero__right {
-      width: calc(25rem + 20.8125 * (100vw - 20rem) / 57.5);
     }
 }
 
@@ -3644,6 +3628,18 @@ h2 {
 @supports not (margin-top: clamp( -4.375rem , 1.6517857143rem  +  -6.6964285714vw , -2.5rem )) {
     .hero__left {
       margin-top: calc(-2.5rem + -1.875 * (100vw - 62rem) / 28);
+    }
+}
+
+@supports (width: clamp( 37.5rem , 19.09375rem  +  29.6875vw , 45.8125rem )) {
+    .hero__right {
+      width: clamp( 37.5rem , 19.09375rem  +  29.6875vw , 45.8125rem );
+    }
+}
+
+@supports not (width: clamp( 37.5rem , 19.09375rem  +  29.6875vw , 45.8125rem )) {
+    .hero__right {
+      width: calc(37.5rem + 8.3125 * (100vw - 62rem) / 28);
     }
 }
 }
