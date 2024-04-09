@@ -338,7 +338,7 @@ body {
           align-items: center;
 }
 
-.hero__left ::before {
+.hero__left > .hero__vodka::before {
   content: "";
   position: absolute;
   left: 0%;
@@ -352,7 +352,7 @@ body {
   pointer-events: none;
 }
 
-.hero__left ::after {
+.hero__left > .hero__vodka::after {
   content: "";
   position: absolute;
   left: 4%;
@@ -643,7 +643,7 @@ body {
             flex-direction: column;
   }
 
-  .hero__left ::after {
+  .hero__left > .hero__vodka::after {
     left: -4%;
   }
 
