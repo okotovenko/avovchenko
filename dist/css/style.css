@@ -966,7 +966,7 @@ body {
 
 @media (max-width: 90em) {
   .page .form-label-textarea {
-    height: 5.3125rem;
+    height: 5.3125rem !important;
   }
 
   .page__thanks .page__title ::after {
