@@ -536,6 +536,11 @@ body {
           animation: top 0.2s 0.6s linear both;
 }
 
+.page-1 {
+  min-height: 100%;
+  height: 100%;
+}
+
 .page {
   position: relative;
 }
@@ -562,7 +567,6 @@ body {
 
 .page__sign {
   width: 100%;
-  height: 100%;
   min-height: 100%;
 }
 
@@ -571,9 +575,6 @@ body {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .page__body h1 {
@@ -640,6 +641,21 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
+}
+
+.page__video::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
 }
 
 .page__video video,
@@ -650,7 +666,105 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: -1;
+}
+
+.page .form {
+  width: 100%;
+  max-width: 48.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page .form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.page .form-label {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  border-bottom: 2px solid #fff;
+}
+
+.page .form-label._icon-check::before {
+  opacity: 0;
+}
+
+.page .form-label._form-true::before {
+  opacity: 1;
+}
+
+.page .form-label._form-error {
+  background: rgba(210, 0, 0, 0.1);
+  border-bottom: 2px solid #d20000;
+}
+
+.page .form-label._form-error::before {
+  opacity: 0;
+}
+
+.page .input {
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  line-height: 113%;
+  letter-spacing: 0.06em;
+  color: #d2d2d2;
+  background: transparent;
+}
+
+.page .input::-webkit-input-placeholder {
+  line-height: 113%;
+  letter-spacing: 0.06em;
+  color: #d2d2d2;
+}
+
+.page .input::-moz-placeholder {
+  line-height: 113%;
+  letter-spacing: 0.06em;
+  color: #d2d2d2;
+}
+
+.page .input:-ms-input-placeholder {
+  line-height: 113%;
+  letter-spacing: 0.06em;
+  color: #d2d2d2;
+}
+
+.page .input::-ms-input-placeholder {
+  line-height: 113%;
+  letter-spacing: 0.06em;
+  color: #d2d2d2;
+}
+
+.page .input::placeholder {
+  line-height: 113%;
+  letter-spacing: 0.06em;
+  color: #d2d2d2;
+}
+
+.page .form-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .page__thanks {
@@ -690,103 +804,6 @@ body {
 .page__thanks p.animation {
   -webkit-animation: top 0.2s 0.4s linear both;
           animation: top 0.2s 0.4s linear both;
-}
-
-.form {
-  width: 100%;
-  max-width: 48.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.form button {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.form-label {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  border-bottom: 2px solid #fff;
-}
-
-.form-label._icon-check::before {
-  opacity: 0;
-}
-
-.form-label._form-true::before {
-  opacity: 1;
-}
-
-.form-label._form-error {
-  background: rgba(210, 0, 0, 0.1);
-  border-bottom: 2px solid #d20000;
-}
-
-.form-label._form-error::before {
-  opacity: 0;
-}
-
-.input {
-  width: 100%;
-  height: 100%;
-  font-weight: 400;
-  line-height: 113%;
-  letter-spacing: 0.06em;
-  color: #d2d2d2;
-  background: transparent;
-}
-
-.input::-webkit-input-placeholder {
-  line-height: 113%;
-  letter-spacing: 0.06em;
-  color: #d2d2d2;
-}
-
-.input::-moz-placeholder {
-  line-height: 113%;
-  letter-spacing: 0.06em;
-  color: #d2d2d2;
-}
-
-.input:-ms-input-placeholder {
-  line-height: 113%;
-  letter-spacing: 0.06em;
-  color: #d2d2d2;
-}
-
-.input::-ms-input-placeholder {
-  line-height: 113%;
-  letter-spacing: 0.06em;
-  color: #d2d2d2;
-}
-
-.input::placeholder {
-  line-height: 113%;
-  letter-spacing: 0.06em;
-  color: #d2d2d2;
-}
-
-.form-data {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 @media (min-width: 100em) {
@@ -858,80 +875,80 @@ body {
     margin-bottom: 0.8125rem;
   }
 
+  .page .form {
+    gap: 1.875rem;
+  }
+
+  .page .form button {
+    margin-top: 0.5625rem;
+  }
+
+  .page .form button {
+    margin-bottom: 2.4375rem;
+  }
+
+  .page .form textarea {
+    padding-top: 1.875rem;
+  }
+
+  .page .form textarea {
+    padding-bottom: 1.875rem;
+  }
+
+  .page .form-label {
+    height: 5.625rem;
+  }
+
+  .page .form-label {
+    padding-right: 1.5625rem;
+  }
+
+  .page .form-label-textarea {
+    height: 5.625rem;
+  }
+
+  .page .input {
+    font-size: 1.625rem;
+  }
+
+  .page .input {
+    padding-left: 2.0625rem;
+  }
+
+  .page .input {
+    padding-right: 2.0625rem;
+  }
+
+  .page .input::-webkit-input-placeholder {
+    font-size: 1.625rem;
+  }
+
+  .page .input::-moz-placeholder {
+    font-size: 1.625rem;
+  }
+
+  .page .input:-ms-input-placeholder {
+    font-size: 1.625rem;
+  }
+
+  .page .input::-ms-input-placeholder {
+    font-size: 1.625rem;
+  }
+
+  .page .input::placeholder {
+    font-size: 1.625rem;
+  }
+
+  .page .form-data {
+    gap: 1.875rem;
+  }
+
   .page__thanks h1 {
     font-size: 6.25rem;
   }
 
   .page__thanks p {
     font-size: 2rem;
-  }
-
-  .form {
-    gap: 1.875rem;
-  }
-
-  .form button {
-    margin-top: 0.5625rem;
-  }
-
-  .form button {
-    margin-bottom: 2.4375rem;
-  }
-
-  .form textarea {
-    padding-top: 1.875rem;
-  }
-
-  .form textarea {
-    padding-bottom: 1.875rem;
-  }
-
-  .form-label {
-    height: 5.625rem;
-  }
-
-  .form-label {
-    padding-right: 1.5625rem;
-  }
-
-  .form-label-textarea {
-    height: 5.625rem;
-  }
-
-  .input {
-    font-size: 1.625rem;
-  }
-
-  .input {
-    padding-left: 2.0625rem;
-  }
-
-  .input {
-    padding-right: 2.0625rem;
-  }
-
-  .input::-webkit-input-placeholder {
-    font-size: 1.625rem;
-  }
-
-  .input::-moz-placeholder {
-    font-size: 1.625rem;
-  }
-
-  .input:-ms-input-placeholder {
-    font-size: 1.625rem;
-  }
-
-  .input::-ms-input-placeholder {
-    font-size: 1.625rem;
-  }
-
-  .input::placeholder {
-    font-size: 1.625rem;
-  }
-
-  .form-data {
-    gap: 1.875rem;
   }
 }
 
@@ -1016,80 +1033,80 @@ body {
     margin-bottom: 0.5625rem;
   }
 
+  .page .form {
+    gap: 0.8125rem;
+  }
+
+  .page .form button {
+    margin-top: 0.9375rem;
+  }
+
+  .page .form button {
+    margin-bottom: 0.8125rem;
+  }
+
+  .page .form textarea {
+    padding-top: 0.75rem;
+  }
+
+  .page .form textarea {
+    padding-bottom: 0.75rem;
+  }
+
+  .page .form-label {
+    height: 2.9375rem;
+  }
+
+  .page .form-label {
+    padding-right: 0.8125rem;
+  }
+
+  .page .form-label-textarea {
+    height: 5.3125rem;
+  }
+
+  .page .input {
+    font-size: 0.875rem;
+  }
+
+  .page .input {
+    padding-left: 0.8125rem;
+  }
+
+  .page .input {
+    padding-right: 0.8125rem;
+  }
+
+  .page .input::-webkit-input-placeholder {
+    font-size: 0.875rem;
+  }
+
+  .page .input::-moz-placeholder {
+    font-size: 0.875rem;
+  }
+
+  .page .input:-ms-input-placeholder {
+    font-size: 0.875rem;
+  }
+
+  .page .input::-ms-input-placeholder {
+    font-size: 0.875rem;
+  }
+
+  .page .input::placeholder {
+    font-size: 0.875rem;
+  }
+
+  .page .form-data {
+    gap: 0.8125rem;
+  }
+
   .page__thanks h1 {
     font-size: 2rem;
   }
 
   .page__thanks p {
     font-size: 0.875rem;
-  }
-
-  .form {
-    gap: 0.8125rem;
-  }
-
-  .form button {
-    margin-top: 0.9375rem;
-  }
-
-  .form button {
-    margin-bottom: 0.8125rem;
-  }
-
-  .form textarea {
-    padding-top: 0.75rem;
-  }
-
-  .form textarea {
-    padding-bottom: 0.75rem;
-  }
-
-  .form-label {
-    height: 2.9375rem;
-  }
-
-  .form-label {
-    padding-right: 0.8125rem;
-  }
-
-  .form-label-textarea {
-    height: 5.3125rem;
-  }
-
-  .input {
-    font-size: 0.875rem;
-  }
-
-  .input {
-    padding-left: 0.8125rem;
-  }
-
-  .input {
-    padding-right: 0.8125rem;
-  }
-
-  .input::-webkit-input-placeholder {
-    font-size: 0.875rem;
-  }
-
-  .input::-moz-placeholder {
-    font-size: 0.875rem;
-  }
-
-  .input:-ms-input-placeholder {
-    font-size: 0.875rem;
-  }
-
-  .input::-ms-input-placeholder {
-    font-size: 0.875rem;
-  }
-
-  .input::placeholder {
-    font-size: 0.875rem;
-  }
-
-  .form-data {
-    gap: 0.8125rem;
   }
 }
 
@@ -1165,6 +1182,10 @@ body {
     max-width: 10.625rem;
   }
 
+  .page__sign {
+    height: 100%;
+  }
+
   .page__body p {
     max-width: 18.75rem;
   }
@@ -1177,7 +1198,7 @@ body {
     display: none;
   }
 
-  .form-data {
+  .page .form-data {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1418,6 +1439,186 @@ body {
     }
 }
 
+@supports (gap: clamp( 0.8125rem , 0.546875rem  +  1.328125vw , 1.875rem )) {
+    .page .form {
+      gap: clamp( 0.8125rem , 0.546875rem  +  1.328125vw , 1.875rem );
+    }
+}
+
+@supports not (gap: clamp( 0.8125rem , 0.546875rem  +  1.328125vw , 1.875rem )) {
+    .page .form {
+      gap: calc(0.8125rem + 1.0625 * (100vw - 20rem) / 80);
+    }
+}
+
+@supports (margin-top: clamp( 0.5625rem , 1.03125rem  +  -0.46875vw , 0.9375rem )) {
+    .page .form button {
+      margin-top: clamp( 0.5625rem , 1.03125rem  +  -0.46875vw , 0.9375rem );
+    }
+}
+
+@supports not (margin-top: clamp( 0.5625rem , 1.03125rem  +  -0.46875vw , 0.9375rem )) {
+    .page .form button {
+      margin-top: calc(0.9375rem + -0.375 * (100vw - 20rem) / 80);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.8125rem , 0.40625rem  +  2.03125vw , 2.4375rem )) {
+    .page .form button {
+      margin-bottom: clamp( 0.8125rem , 0.40625rem  +  2.03125vw , 2.4375rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.8125rem , 0.40625rem  +  2.03125vw , 2.4375rem )) {
+    .page .form button {
+      margin-bottom: calc(0.8125rem + 1.625 * (100vw - 20rem) / 80);
+    }
+}
+
+@supports (padding-top: clamp( 0.75rem , 0.46875rem  +  1.40625vw , 1.875rem )) {
+    .page .form textarea {
+      padding-top: clamp( 0.75rem , 0.46875rem  +  1.40625vw , 1.875rem );
+    }
+}
+
+@supports not (padding-top: clamp( 0.75rem , 0.46875rem  +  1.40625vw , 1.875rem )) {
+    .page .form textarea {
+      padding-top: calc(0.75rem + 1.125 * (100vw - 20rem) / 80);
+    }
+}
+
+@supports (padding-bottom: clamp( 0.75rem , 0.46875rem  +  1.40625vw , 1.875rem )) {
+    .page .form textarea {
+      padding-bottom: clamp( 0.75rem , 0.46875rem  +  1.40625vw , 1.875rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 0.75rem , 0.46875rem  +  1.40625vw , 1.875rem )) {
+    .page .form textarea {
+      padding-bottom: calc(0.75rem + 1.125 * (100vw - 20rem) / 80);
+    }
+}
+
+@supports (height: clamp( 2.9375rem , 2.265625rem  +  3.359375vw , 5.625rem )) {
+    .page .form-label {
+      height: clamp( 2.9375rem , 2.265625rem  +  3.359375vw , 5.625rem );
+    }
+}
+
+@supports not (height: clamp( 2.9375rem , 2.265625rem  +  3.359375vw , 5.625rem )) {
+    .page .form-label {
+      height: calc(2.9375rem + 2.6875 * (100vw - 20rem) / 80);
+    }
+}
+
+@supports (padding-right: clamp( 0.8125rem , 0.625rem  +  0.9375vw , 1.5625rem )) {
+    .page .form-label {
+      padding-right: clamp( 0.8125rem , 0.625rem  +  0.9375vw , 1.5625rem );
+    }
+}
+
+@supports not (padding-right: clamp( 0.8125rem , 0.625rem  +  0.9375vw , 1.5625rem )) {
+    .page .form-label {
+      padding-right: calc(0.8125rem + 0.75 * (100vw - 20rem) / 80);
+    }
+}
+
+@supports (height: clamp( 5.3125rem , 5.234375rem  +  0.390625vw , 5.625rem )) {
+    .page .form-label-textarea {
+      height: clamp( 5.3125rem , 5.234375rem  +  0.390625vw , 5.625rem );
+    }
+}
+
+@supports not (height: clamp( 5.3125rem , 5.234375rem  +  0.390625vw , 5.625rem )) {
+    .page .form-label-textarea {
+      height: calc(5.3125rem + 0.3125 * (100vw - 20rem) / 80);
+    }
+}
+
+@supports (font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem )) {
+    .page .input {
+      font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem )) {
+    .page .input {
+      font-size: calc(0.875rem + 0.75 * (100vw - 20rem) / 80);
+    }
+}
+
+@supports (padding-left: clamp( 0.8125rem , 0.5rem  +  1.5625vw , 2.0625rem )) {
+    .page .input {
+      padding-left: clamp( 0.8125rem , 0.5rem  +  1.5625vw , 2.0625rem );
+    }
+}
+
+@supports not (padding-left: clamp( 0.8125rem , 0.5rem  +  1.5625vw , 2.0625rem )) {
+    .page .input {
+      padding-left: calc(0.8125rem + 1.25 * (100vw - 20rem) / 80);
+    }
+}
+
+@supports (padding-right: clamp( 0.8125rem , 0.5rem  +  1.5625vw , 2.0625rem )) {
+    .page .input {
+      padding-right: clamp( 0.8125rem , 0.5rem  +  1.5625vw , 2.0625rem );
+    }
+}
+
+@supports not (padding-right: clamp( 0.8125rem , 0.5rem  +  1.5625vw , 2.0625rem )) {
+    .page .input {
+      padding-right: calc(0.8125rem + 1.25 * (100vw - 20rem) / 80);
+    }
+}
+
+@supports (font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem )) {
+    .page .input::-webkit-input-placeholder {
+      font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem );
+    }
+    .page .input::-moz-placeholder {
+      font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem );
+    }
+    .page .input:-ms-input-placeholder {
+      font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem );
+    }
+    .page .input::-ms-input-placeholder {
+      font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem );
+    }
+    .page .input::placeholder {
+      font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem )) {
+    .page .input::-webkit-input-placeholder {
+      font-size: calc(0.875rem + 0.75 * (100vw - 20rem) / 80);
+    }
+    .page .input::-moz-placeholder {
+      font-size: calc(0.875rem + 0.75 * (100vw - 20rem) / 80);
+    }
+    .page .input:-ms-input-placeholder {
+      font-size: calc(0.875rem + 0.75 * (100vw - 20rem) / 80);
+    }
+    .page .input::-ms-input-placeholder {
+      font-size: calc(0.875rem + 0.75 * (100vw - 20rem) / 80);
+    }
+    .page .input::placeholder {
+      font-size: calc(0.875rem + 0.75 * (100vw - 20rem) / 80);
+    }
+}
+
+@supports (gap: clamp( 0.8125rem , 0.546875rem  +  1.328125vw , 1.875rem )) {
+    .page .form-data {
+      gap: clamp( 0.8125rem , 0.546875rem  +  1.328125vw , 1.875rem );
+    }
+}
+
+@supports not (gap: clamp( 0.8125rem , 0.546875rem  +  1.328125vw , 1.875rem )) {
+    .page .form-data {
+      gap: calc(0.8125rem + 1.0625 * (100vw - 20rem) / 80);
+    }
+}
+
 @supports (font-size: clamp( 2rem , 0.9375rem  +  5.3125vw , 6.25rem )) {
     .page__thanks h1 {
       font-size: clamp( 2rem , 0.9375rem  +  5.3125vw , 6.25rem );
@@ -1439,186 +1640,6 @@ body {
 @supports not (font-size: clamp( 0.875rem , 0.59375rem  +  1.40625vw , 2rem )) {
     .page__thanks p {
       font-size: calc(0.875rem + 1.125 * (100vw - 20rem) / 80);
-    }
-}
-
-@supports (gap: clamp( 0.8125rem , 0.546875rem  +  1.328125vw , 1.875rem )) {
-    .form {
-      gap: clamp( 0.8125rem , 0.546875rem  +  1.328125vw , 1.875rem );
-    }
-}
-
-@supports not (gap: clamp( 0.8125rem , 0.546875rem  +  1.328125vw , 1.875rem )) {
-    .form {
-      gap: calc(0.8125rem + 1.0625 * (100vw - 20rem) / 80);
-    }
-}
-
-@supports (margin-top: clamp( 0.5625rem , 1.03125rem  +  -0.46875vw , 0.9375rem )) {
-    .form button {
-      margin-top: clamp( 0.5625rem , 1.03125rem  +  -0.46875vw , 0.9375rem );
-    }
-}
-
-@supports not (margin-top: clamp( 0.5625rem , 1.03125rem  +  -0.46875vw , 0.9375rem )) {
-    .form button {
-      margin-top: calc(0.9375rem + -0.375 * (100vw - 20rem) / 80);
-    }
-}
-
-@supports (margin-bottom: clamp( 0.8125rem , 0.40625rem  +  2.03125vw , 2.4375rem )) {
-    .form button {
-      margin-bottom: clamp( 0.8125rem , 0.40625rem  +  2.03125vw , 2.4375rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 0.8125rem , 0.40625rem  +  2.03125vw , 2.4375rem )) {
-    .form button {
-      margin-bottom: calc(0.8125rem + 1.625 * (100vw - 20rem) / 80);
-    }
-}
-
-@supports (padding-top: clamp( 0.75rem , 0.46875rem  +  1.40625vw , 1.875rem )) {
-    .form textarea {
-      padding-top: clamp( 0.75rem , 0.46875rem  +  1.40625vw , 1.875rem );
-    }
-}
-
-@supports not (padding-top: clamp( 0.75rem , 0.46875rem  +  1.40625vw , 1.875rem )) {
-    .form textarea {
-      padding-top: calc(0.75rem + 1.125 * (100vw - 20rem) / 80);
-    }
-}
-
-@supports (padding-bottom: clamp( 0.75rem , 0.46875rem  +  1.40625vw , 1.875rem )) {
-    .form textarea {
-      padding-bottom: clamp( 0.75rem , 0.46875rem  +  1.40625vw , 1.875rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 0.75rem , 0.46875rem  +  1.40625vw , 1.875rem )) {
-    .form textarea {
-      padding-bottom: calc(0.75rem + 1.125 * (100vw - 20rem) / 80);
-    }
-}
-
-@supports (height: clamp( 2.9375rem , 2.265625rem  +  3.359375vw , 5.625rem )) {
-    .form-label {
-      height: clamp( 2.9375rem , 2.265625rem  +  3.359375vw , 5.625rem );
-    }
-}
-
-@supports not (height: clamp( 2.9375rem , 2.265625rem  +  3.359375vw , 5.625rem )) {
-    .form-label {
-      height: calc(2.9375rem + 2.6875 * (100vw - 20rem) / 80);
-    }
-}
-
-@supports (padding-right: clamp( 0.8125rem , 0.625rem  +  0.9375vw , 1.5625rem )) {
-    .form-label {
-      padding-right: clamp( 0.8125rem , 0.625rem  +  0.9375vw , 1.5625rem );
-    }
-}
-
-@supports not (padding-right: clamp( 0.8125rem , 0.625rem  +  0.9375vw , 1.5625rem )) {
-    .form-label {
-      padding-right: calc(0.8125rem + 0.75 * (100vw - 20rem) / 80);
-    }
-}
-
-@supports (height: clamp( 5.3125rem , 5.234375rem  +  0.390625vw , 5.625rem )) {
-    .form-label-textarea {
-      height: clamp( 5.3125rem , 5.234375rem  +  0.390625vw , 5.625rem );
-    }
-}
-
-@supports not (height: clamp( 5.3125rem , 5.234375rem  +  0.390625vw , 5.625rem )) {
-    .form-label-textarea {
-      height: calc(5.3125rem + 0.3125 * (100vw - 20rem) / 80);
-    }
-}
-
-@supports (font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem )) {
-    .input {
-      font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem );
-    }
-}
-
-@supports not (font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem )) {
-    .input {
-      font-size: calc(0.875rem + 0.75 * (100vw - 20rem) / 80);
-    }
-}
-
-@supports (padding-left: clamp( 0.8125rem , 0.5rem  +  1.5625vw , 2.0625rem )) {
-    .input {
-      padding-left: clamp( 0.8125rem , 0.5rem  +  1.5625vw , 2.0625rem );
-    }
-}
-
-@supports not (padding-left: clamp( 0.8125rem , 0.5rem  +  1.5625vw , 2.0625rem )) {
-    .input {
-      padding-left: calc(0.8125rem + 1.25 * (100vw - 20rem) / 80);
-    }
-}
-
-@supports (padding-right: clamp( 0.8125rem , 0.5rem  +  1.5625vw , 2.0625rem )) {
-    .input {
-      padding-right: clamp( 0.8125rem , 0.5rem  +  1.5625vw , 2.0625rem );
-    }
-}
-
-@supports not (padding-right: clamp( 0.8125rem , 0.5rem  +  1.5625vw , 2.0625rem )) {
-    .input {
-      padding-right: calc(0.8125rem + 1.25 * (100vw - 20rem) / 80);
-    }
-}
-
-@supports (font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem )) {
-    .input::-webkit-input-placeholder {
-      font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem );
-    }
-    .input::-moz-placeholder {
-      font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem );
-    }
-    .input:-ms-input-placeholder {
-      font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem );
-    }
-    .input::-ms-input-placeholder {
-      font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem );
-    }
-    .input::placeholder {
-      font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem );
-    }
-}
-
-@supports not (font-size: clamp( 0.875rem , 0.6875rem  +  0.9375vw , 1.625rem )) {
-    .input::-webkit-input-placeholder {
-      font-size: calc(0.875rem + 0.75 * (100vw - 20rem) / 80);
-    }
-    .input::-moz-placeholder {
-      font-size: calc(0.875rem + 0.75 * (100vw - 20rem) / 80);
-    }
-    .input:-ms-input-placeholder {
-      font-size: calc(0.875rem + 0.75 * (100vw - 20rem) / 80);
-    }
-    .input::-ms-input-placeholder {
-      font-size: calc(0.875rem + 0.75 * (100vw - 20rem) / 80);
-    }
-    .input::placeholder {
-      font-size: calc(0.875rem + 0.75 * (100vw - 20rem) / 80);
-    }
-}
-
-@supports (gap: clamp( 0.8125rem , 0.546875rem  +  1.328125vw , 1.875rem )) {
-    .form-data {
-      gap: clamp( 0.8125rem , 0.546875rem  +  1.328125vw , 1.875rem );
-    }
-}
-
-@supports not (gap: clamp( 0.8125rem , 0.546875rem  +  1.328125vw , 1.875rem )) {
-    .form-data {
-      gap: calc(0.8125rem + 1.0625 * (100vw - 20rem) / 80);
     }
 }
 }
