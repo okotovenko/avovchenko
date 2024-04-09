@@ -5,7 +5,7 @@
 <!--<html prefix="og: https://ogp.me/ns#"> -->
 
 <head>
-	<title>main</title>
+	<title>sign up</title>
 	<meta charset="UTF-8">
 	<!-- Не обов'язковий мета-тег для ІЕ (Internet Explorer) та його версії (Edge (можливі також версії  ..., IE8, IE9, IE10, IE11)) -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,36 +49,48 @@
 		<header class="header">
 			<div class="header__container">
 				<a href='/index.html' class='header__logo'><img src='img/logo.svg' alt='logo'></a>
-				<a href="/thanks.html" class="header__join">JOIN WAITING LIST</a>
-				<a href='/index.html' class='header__logo header__logo--mob'><img src='img/logo.svg' alt='logo'></a>
+				<a href='/index.html' class='header__logo'><img src='img/logo.svg' alt='logo'></a>
 			</div>
 		</header>
-		<main class="page">
-			<section class="page__hero hero">
-				<div class="hero__container">
-					<div class="hero__left">
-						<div class="hero__vodka" data-prlx-mouse data-prlx-cx="500" data-prlx-cy="300">
-							<picture><source srcset="img/vodka.webp" type="image/webp"><img src="img/vodka.png" alt="vodka"></picture>
+		<main class="page page-1">
+			<section class="page__sign">
+				<div class="page__body">
+					<div class="page__container">
+						<div class="page__title">
+							<h1 data-watch-threshold="0.5" data-watch-once data-watch>Sing Up</h1>
 						</div>
-						<picture><source srcset="img/decor.webp" type="image/webp"><img data-prlx-mouse data-prlx-cx="800" data-prlx-cy="500" data-prlx-dxr data-prlx-dyr class="hero__decor" src="img/decor.png" alt="decor"></picture>
-					</div>
-					<div class="hero__right">
-						<div class="hero__top">
-							<h1 data-watch-threshold="0.5" data-watch-once data-watch>KHORTYTSA</h1>
-							<div data-watch-threshold="0.5" data-watch-once data-watch class="hero__subtitle">
-								<h2>RETURNS TO AUSTRALIA!</h2>
+						<form action="files/sendmail/sendmail.php" data-ajax enctype="multipart/form-data" class="form" method="POST">
+							<input type="hidden" name="form_subject" value="Тема листа">
+							<label class="form-label _icon-check">
+								<input placeholder="Company*" type="text" data-required name="company" id="company" autocomplete="off" maxlength="255" data-error="Error" class="input">
+							</label>
+							<label class="form-label _icon-check">
+								<input type="text" placeholder="Contact Name*" data-required name="name" id="name" autocomplete="off" maxlength="255" data-error="Error" class="input">
+							</label>
+							<div class="form-data">
+								<label class="form-label _icon-check">
+									<input placeholder="Email*" type="email" data-required name="email" id="email" autocomplete="off" maxlength="255" data-error="Error" class="input">
+								</label>
+								<label class="form-label _icon-check">
+									<input placeholder="Phone*" type="tel" data-required name="tel" id="tel" autocomplete="off" maxlength="255" data-error="Error" class="input">
+								</label>
 							</div>
-							<h3 data-watch-threshold="0.5" data-watch-once data-watch>3 internationally best-selling vodkas
-							</h3>
-						</div>
-						<div class="hero__text">
-							<p data-watch-threshold="0.5" data-watch-once data-watch>Please join the waiting list to Have Us
-							</p>
-							<p data-watch-threshold="0.5" data-watch-once data-watch>Host a Tasting Session for Your Team</p>
-						</div>
-						<a data-watch-threshold="0.5" data-watch-once data-watch href="sign-up.html" class="button">JOIN
-							WAITING LIST</a>
+							<label class="form-label form-label-textarea _icon-check">
+								<textarea placeholder="What others vodka do you have in your portfolio?*" data-required name="what" id="what" autocomplete="off" maxlength="255" data-error="Error" class="input"></textarea>
+							</label>
+							<button type="submit" class="button">SUBMIT</button>
+						</form>
+						<p>
+							By hitting submit you agree to receive marketing emails from azary.club and <a href="#">azary.com.au</a> and certify
+							that you are of legal drinking age.
+						</p>
 					</div>
+				</div>
+				<div class="page__video">
+					<video preload="auto" muted autoplay loop>
+						<source type="video/webm" src="img/IMG_6299.webm">
+						<source type="video/mp4" src="img/IMG_6299.mp4">
+					</video>
 				</div>
 			</section>
 
@@ -102,3 +114,10 @@
 </body>
 
 </html>
+
+<!-- 
+
+<textarea placeholder="What others vodka do you have in your portfolio?*" data-required
+name="what" id="what" autocomplete="off" maxlength="255" data-error="Error"
+class="input"></textarea>
+ -->
