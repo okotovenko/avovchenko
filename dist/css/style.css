@@ -928,27 +928,27 @@ body {
   }
 
   .page .input {
-    font-size: 1.625rem;
+    font-size: 1.5rem;
   }
 
   .page .input::-webkit-input-placeholder {
-    font-size: 1.625rem;
+    font-size: 1.5rem;
   }
 
   .page .input::-moz-placeholder {
-    font-size: 1.625rem;
+    font-size: 1.5rem;
   }
 
   .page .input:-ms-input-placeholder {
-    font-size: 1.625rem;
+    font-size: 1.5rem;
   }
 
   .page .input::-ms-input-placeholder {
-    font-size: 1.625rem;
+    font-size: 1.5rem;
   }
 
   .page .input::placeholder {
-    font-size: 1.625rem;
+    font-size: 1.5rem;
   }
 
   .page .form-data {
@@ -1317,51 +1317,51 @@ body {
     }
 }
 
-@supports (font-size: clamp( 1.125rem , -0.375rem  +  1.6666666667vw , 1.625rem )) {
+@supports (font-size: clamp( 1.125rem , 0.0000000625rem  +  1.25vw , 1.5rem )) {
     .page .input {
-      font-size: clamp( 1.125rem , -0.375rem  +  1.6666666667vw , 1.625rem );
+      font-size: clamp( 1.125rem , 0.0000000625rem  +  1.25vw , 1.5rem );
     }
 }
 
-@supports not (font-size: clamp( 1.125rem , -0.375rem  +  1.6666666667vw , 1.625rem )) {
+@supports not (font-size: clamp( 1.125rem , 0.0000000625rem  +  1.25vw , 1.5rem )) {
     .page .input {
-      font-size: calc(1.125rem + 0.5 * (100vw - 90rem) / 30);
+      font-size: calc(1.125rem + 0.375 * (100vw - 90rem) / 30);
     }
 }
 
-@supports (font-size: clamp( 1.125rem , -0.375rem  +  1.6666666667vw , 1.625rem )) {
+@supports (font-size: clamp( 1.125rem , 0.0000000625rem  +  1.25vw , 1.5rem )) {
     .page .input::-webkit-input-placeholder {
-      font-size: clamp( 1.125rem , -0.375rem  +  1.6666666667vw , 1.625rem );
+      font-size: clamp( 1.125rem , 0.0000000625rem  +  1.25vw , 1.5rem );
     }
     .page .input::-moz-placeholder {
-      font-size: clamp( 1.125rem , -0.375rem  +  1.6666666667vw , 1.625rem );
+      font-size: clamp( 1.125rem , 0.0000000625rem  +  1.25vw , 1.5rem );
     }
     .page .input:-ms-input-placeholder {
-      font-size: clamp( 1.125rem , -0.375rem  +  1.6666666667vw , 1.625rem );
+      font-size: clamp( 1.125rem , 0.0000000625rem  +  1.25vw , 1.5rem );
     }
     .page .input::-ms-input-placeholder {
-      font-size: clamp( 1.125rem , -0.375rem  +  1.6666666667vw , 1.625rem );
+      font-size: clamp( 1.125rem , 0.0000000625rem  +  1.25vw , 1.5rem );
     }
     .page .input::placeholder {
-      font-size: clamp( 1.125rem , -0.375rem  +  1.6666666667vw , 1.625rem );
+      font-size: clamp( 1.125rem , 0.0000000625rem  +  1.25vw , 1.5rem );
     }
 }
 
-@supports not (font-size: clamp( 1.125rem , -0.375rem  +  1.6666666667vw , 1.625rem )) {
+@supports not (font-size: clamp( 1.125rem , 0.0000000625rem  +  1.25vw , 1.5rem )) {
     .page .input::-webkit-input-placeholder {
-      font-size: calc(1.125rem + 0.5 * (100vw - 90rem) / 30);
+      font-size: calc(1.125rem + 0.375 * (100vw - 90rem) / 30);
     }
     .page .input::-moz-placeholder {
-      font-size: calc(1.125rem + 0.5 * (100vw - 90rem) / 30);
+      font-size: calc(1.125rem + 0.375 * (100vw - 90rem) / 30);
     }
     .page .input:-ms-input-placeholder {
-      font-size: calc(1.125rem + 0.5 * (100vw - 90rem) / 30);
+      font-size: calc(1.125rem + 0.375 * (100vw - 90rem) / 30);
     }
     .page .input::-ms-input-placeholder {
-      font-size: calc(1.125rem + 0.5 * (100vw - 90rem) / 30);
+      font-size: calc(1.125rem + 0.375 * (100vw - 90rem) / 30);
     }
     .page .input::placeholder {
-      font-size: calc(1.125rem + 0.5 * (100vw - 90rem) / 30);
+      font-size: calc(1.125rem + 0.375 * (100vw - 90rem) / 30);
     }
 }
 
