@@ -5,20 +5,20 @@
 <!--<html prefix="og: https://ogp.me/ns#"> -->
 
 <head>
-	<title>main page</title>
+	<title>main</title>
 	<meta charset="UTF-8">
 	<!-- Не обов'язковий мета-тег для ІЕ (Internet Explorer) та його версії (Edge (можливі також версії  ..., IE8, IE9, IE10, IE11)) -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240226134411">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240409100212">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- Кодування сторінки: ширина області перегляду така ж, як і ширина екрану; зум за замовчуванням 100%; заборона масштабувати контент користувачу -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="ТУТ ВКАЗУЄМО КЛЮЧОВІ СЛОВА ДЛЯ ПОШУКОВИХ СИСТЕМ">
 	<meta name="description" content="ТУТ КОРОТКИЙ ОПИС-ПРИЗНАЧЕННЯ СТОРІНКИ">
-	<meta name="author" content="АВТОР">
+	<meta name="author" content="">
 	<!-- Open Graph -->
 	<!-- <meta property="og:site_name" content="---" /> -->
 	<!--<meta property="og:description" content="---"> -->
@@ -41,475 +41,63 @@
 <body>
 	<div class="preloader">
 		<svg class="preloader__image" role="img" viewBox="0 0 512 512">
-			<path fill="#C71717" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+			<path fill="#b59257" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
 			</path>
 		</svg>
 	</div>
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<a href='' class='header__logo'><img src='img/logo.svg' alt='logo'></a>
-				<button class="button" data-goto-top="30" data-goto=".contacts">Contact</button>
+				<a href='#' class='header__logo'><img src='img/logo.svg' alt='logo'></a>
+				<a href="#" class="header__join">JOIN WAITING LIST</a>
+				<a href='#' class='header__logo header__logo--mob'><img src='img/logo.svg' alt='logo'></a>
 			</div>
 		</header>
 		<main class="page">
-			<section class="hero">
+			<section class="page__hero hero">
 				<div class="hero__container">
 					<div class="hero__left">
-						<h1><span>IMPROVE</span> sales <br>
-							WITH <span>UNIQUE</span>
-							PRESENTATIONS!</h1>
-						<ul>
-							<li>Sales</li>
-							<li>Investment</li>
-							<li>Commercial offers</li>
-							<li>Pitch decks</li>
-							<li>Educational</li>
-							<span>and many more!</span>
-						</ul>
-						<button data-da=".hero__container, 768, 3" class="button" data-popup="#popup">Get in touch!</button>
+						<div class="hero__vodka" data-prlx-mouse data-prlx-cx="500" data-prlx-cy="300">
+							<picture><source srcset="img/vodka.webp" type="image/webp"><img src="img/vodka.png" alt="vodka"></picture>
+						</div>
+						<picture><source srcset="img/decor.webp" type="image/webp"><img data-prlx-mouse data-prlx-cx="800" data-prlx-cy="500" data-prlx-dxr data-prlx-dyr class="hero__decor" src="img/decor.png" alt="decor"></picture>
 					</div>
 					<div class="hero__right">
-						<picture><source srcset="img/hero.webp" type="image/webp"><img class="hero__img" src="img/hero.png" alt="work exemple"></picture>
-						<img class="hero__svg" src="img/1.svg" alt="services">
+						<div class="hero__top">
+							<h1 data-watch-threshold="0.5" data-watch-once data-watch>KHORTYTSA</h1>
+							<div data-watch-threshold="0.5" data-watch-once data-watch class="hero__subtitle">
+								<h2>RETURNS TO AUSTRALIA!</h2>
+							</div>
+							<h3 data-watch-threshold="0.5" data-watch-once data-watch>3 internationally best-selling vodkas
+							</h3>
+						</div>
+						<div class="hero__text">
+							<p data-watch-threshold="0.5" data-watch-once data-watch>Please join the waiting list to Have Us
+							</p>
+							<p data-watch-threshold="0.5" data-watch-once data-watch>Host a Tasting Session for Your Team</p>
+						</div>
+						<a data-watch-threshold="0.5" data-watch-once data-watch href="#" class="button">JOIN WAITING LIST</a>
 					</div>
 				</div>
 			</section>
-			<section class="why">
-				<div class="why__container">
-					<h2>WHY PRESENTATIONS FAIL?</h2>
-					<p>Creation of impressive presentation can be challenging</p>
-					<div class="why__items">
-						<div class="why__item">
-							<picture><source srcset="img/01.webp" type="image/webp"><img src="img/01.png" alt="bad impression"></picture>
-							<p>Presentations or commercial <br>
-								offers don't make the right impression.</p>
-						</div>
-						<div class="why__item">
-							<picture><source srcset="img/02.webp" type="image/webp"><img src="img/02.png" alt="Lack of clear identification"></picture>
-							<p>Lack of clear identification <br>
-								of values or services for the client.</p>
-						</div>
-						<div class="why__item">
-							<picture><source srcset="img/03.webp" type="image/webp"><img src="img/03.png" alt="Too much information"></picture>
-							<p>Too much information. <br>
-								Key points missed.</p>
-						</div>
-						<div class="why__item">
-							<picture><source srcset="img/04.webp" type="image/webp"><img src="img/04.png" alt="Bad design"></picture>
-							<p>Bad or poor design <br>
-								that distract from the content.</p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="designer">
-				<div class="designer__container">
-					<div class="designer__left">
-						<picture><source srcset="img/artem.webp" type="image/webp"><img src="img/artem.png" alt="artem vovchenko"></picture>
-					</div>
-					<div class="designer__right">
-						<h2>ARTEM VOVCHENKO</h2>
-						<h3>PRESENTATION DESIGNER</h3>
-						<div class="designer__text">
-							<p>I work as presentation designer since 2016 and on next few minutes, I will tell you about the
-								benefits of cooperation with me and show you why your search for a qualified specialist is
-								officially over</p>
-						</div>
-						<div class="designer__counters">
-							<div class="designer__count">
-								800<span>+</span>
-								<p>Successful projects</p>
-							</div>
-							<div class="designer__count">
-								300<span>+</span>
-								<p>Happy clients</p>
-							</div>
-							<div class="designer__count">
-								120<span>+</span>
-								<p>Reviews</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="logos">
-				<div class="logos__wrap">
-					<div class="logos__items marquee">
-						<div class="logos__item">
-							<img src="img/logos/01.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/02.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/03.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/04.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/05.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/06.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/07.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/08.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/09.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/01.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/02.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/03.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/04.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/05.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/06.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/07.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/08.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/09.svg" alt="logo">
-						</div>
-					</div>
-					<div aria-hidden="true" class="logos__items marquee">
-						<div class="logos__item">
-							<img src="img/logos/01.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/02.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/03.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/04.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/05.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/06.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/07.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/08.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/09.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/01.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/02.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/03.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/04.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/05.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/06.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/07.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/08.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/09.svg" alt="logo">
-						</div>
-					</div>
-				</div>
-				<div class="logos__wrap">
-					<div class="logos__items marquee reverce">
-						<div class="logos__item">
-							<img src="img/logos/11.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/12.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/13.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/14.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/15.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/16.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/17.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/18.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/19.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/11.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/12.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/13.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/14.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/15.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/16.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/17.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/18.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/19.svg" alt="logo">
-						</div>
-					</div>
-					<div aria-hidden="true" class="logos__items marquee reverce">
-						<div class="logos__item">
-							<img src="img/logos/11.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/12.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/13.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/14.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/15.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/16.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/17.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/18.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/19.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/11.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/12.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/13.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/14.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/15.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/16.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/17.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/18.svg" alt="logo">
-						</div>
-						<div class="logos__item">
-							<img src="img/logos/19.svg" alt="logo">
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="services">
-				<div class="services__container">
-					<div class="services__left">
-						<h2>FULL LIST OF SERVICES</h2>
-						<div class="services__text">
-							<p>I'll be happy to create all types of presentations for you: sales, investment, commercial
-								offers, pitch decks and more.</p>
-						</div>
-						<div class="services__list">
-							<div class="services__item">
-								<span><img src="img/services/01.svg" alt="Copywrite"></span>
-								Copywrite
-							</div>
-							<div class="services__item">
-								<span><img src="img/services/02.svg" alt="Animation"></span>
-								Animation
-							</div>
-							<div class="services__item">
-								<span><img src="img/services/03.svg" alt="Print-Ready"></span>
-								Print-Ready
-							</div>
-							<div class="services__item">
-								<span><img src="img/services/04.svg" alt="Optimization"></span>
-								Optimization
-							</div>
-							<div class="services__item">
-								<span><img src="img/services/05.svg" alt="Text edit"></span>
-								Text edit
-							</div>
-							<div class="services__item">
-								<span><img src="img/services/06.svg" alt="Design"></span>
-								Design
-							</div>
-						</div>
-						<button class="button" data-popup="#popup">Get in touch!</button>
-					</div>
-					<div class="services__right">
-						<div class="services__bg">
-							<picture><source srcset="img/services/bg.webp" type="image/webp"><img class="services__bg--desk" src="img/services/bg.png" alt="work exemple"></picture>
-							<picture><source srcset="img/services/bg-mob.webp" type="image/webp"><img class="services__bg--mob" src="img/services/bg-mob.png" alt="work exemple"></picture>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="process">
-				<div class="process__container">
-					<div class="circle-big"></div>
-					<h2>EASY BRIEFING PROCESS</h2>
-					<div class="process__box">
-						<div class="process__left">
-							<div class="circle"></div>
-							<div class="process__top">
-								<p>your draft</p>
-								<div class="process__arrow"><img src="img/Arrow.svg" alt="arrow"></div>
-							</div>
-							<picture><source srcset="img/draft.webp" type="image/webp"><img src="img/draft.png" alt="draft"></picture>
-						</div>
-						<div class="process__right">
-							<p>my design</p>
-							<picture><source srcset="img/design.webp" type="image/webp"><img src="img/design.png" alt="design"></picture>
-						</div>
-					</div>
 
-				</div>
-			</section>
-			<section class="more">
-				<div class="more__container">
-					<div class="more__project project--1">
-						<picture><source srcset="img/project-1.webp" type="image/webp"><img src="img/project-1.png" alt="projects"></picture>
-					</div>
-					<a href="#" class="button">more projects!</a>
-					<div class="more__project project--2">
-						<picture><source srcset="img/project-2.webp" type="image/webp"><img src="img/project-2.png" alt="projects"></picture>
-					</div>
-				</div>
-			</section>
-			<section class="contacts">
-				<div class="contacts__container">
-					<div class="contacts__left">
-						<h2>DO YOU HAVE <br>
-							ANY QUESTIONS?</h2>
-						<div class="contacts__items">
-							<div class="contacts__item">
-								<img src="img/contacts/whatsapp.svg" alt="whatsapp">
-								<a class="" href="tel:+4591413493">+45 91 41 34 93</a>
-							</div>
-							<div class="contacts__item">
-								<img src="img/contacts/instagram.svg" alt="instagram">
-								<a class="" href="vovchenko_design">vovchenko_design</a>
-							</div>
-							<div class="contacts__item">
-								<img src="img/contacts/linkedin.svg" alt="linkedin">
-								<a class="" href="vovchenkoartem">vovchenkoartem</a>
-							</div>
-							<div class="contacts__item">
-								<img src="img/contacts/mail.svg" alt="mail">
-								<a class="" href="mailto:art3mchenko@gmail.com">art3mchenko@gmail.com</a>
-							</div>
-						</div>
-					</div>
-					<div class="contacts__right">
-						<form action="#" data-ajax enctype="multipart/form-data" class="form" method="POST">
-							<h2>would like <br>
-								a free consultation?</h2>
-							<label class="form-label">
-								<input type="text" data-placeholder data-required name="name" id="name" autocomplete="off" maxlength="255" data-error="Error" class="input" placeholder="NAME">
-							</label>
-							<label class="form-label">
-								<input type="email" data-placeholder data-required name="email" id="email" autocomplete="off" maxlength="255" data-error="Error" class="input" placeholder="E-MAIL">
-							</label>
-							<button type="submit" class="button" id="button">send an application</button>
-						</form>
-					</div>
-				</div>
-				<div class="contacts__reach">
-					<p class="contacts__reach--p" data-da=".contacts__left,768,1">Reach out and I will give you the answers
-						in <span>less than 1
-							hour!</span></p>
-					<picture><source srcset="img/contacts/decor.webp" type="image/webp"><img data-da=".contacts__left,768,1" class="contacts__reach--img" src="img/contacts/decor.png" alt="decor"></picture>
-				</div>
-			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
 			</div>
 		</footer>
 	</div>
-	<div id="popup" aria-hidden="true" class="popup">
-		<div class="popup__wrapper">
-			<div class="popup__content">
-				<!-- <button data-close type="button" class="popup__close">Закрыть</button> -->
-				<picture><source srcset="img/popup-bg.webp" type="image/webp"><img src="img/popup-bg.png" alt="background"></picture>
-				<form action="#" data-ajax enctype="multipart/form-data" class="form popup-form" method="POST">
-					<h2>would like <br>
-						a free consultation?</h2>
-					<label class="form-label">
-						<input type="text" data-placeholder data-required name="name" id="popup-name" autocomplete="off" maxlength="255" data-error="Error" class="input" placeholder="NAME">
-					</label>
-					<label class="form-label">
-						<input type="email" data-placeholder data-required name="email" id="popup-email" autocomplete="off" maxlength="255" data-error="Error" class="input" placeholder="E-MAIL">
-					</label>
-					<button type="submit" class="button" id="popup-button">send an application</button>
-				</form>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240226134411"></script>
+</div> -->
+	<script src="js/app.min.js?_v=20240409100212"></script>
 </body>
 
 </html>
