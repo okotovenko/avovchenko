@@ -5,13 +5,13 @@
 <!--<html prefix="og: https://ogp.me/ns#"> -->
 
 <head>
-	<title>sign up</title>
+	<title>main/sign up</title>
 	<meta charset="UTF-8">
 	<!-- Не обов'язковий мета-тег для ІЕ (Internet Explorer) та його версії (Edge (можливі також версії  ..., IE8, IE9, IE10, IE11)) -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240409175645">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240411154241">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- Кодування сторінки: ширина області перегляду така ж, як і ширина екрану; зум за замовчуванням 100%; заборона масштабувати контент користувачу -->
@@ -49,41 +49,49 @@
 		<header class="header">
 			<div class="header__container">
 				<a href='index.html' class='header__logo'><img src='img/logo.svg' alt='logo'></a>
-				<a href='thanks.html' class='header__logo'><img src='img/logo.svg' alt='logo'></a>
+				<a href='thanks.html' class='header__logo header__logo-second'><img src='img/logo.svg' alt='logo'></a>
 			</div>
 		</header>
 		<main class="page page-1">
 			<section class="page__sign">
 				<div class="page__body">
 					<div class="page__container">
-						<div class="page__title">
-							<h1 data-watch-threshold="0.5" data-watch-once data-watch>Sing Up</h1>
-						</div>
-						<form action="files/sendmail/sendmail.php" data-ajax enctype="multipart/form-data" class="form" method="POST">
-							<input type="hidden" name="form_subject" value="Тема листа">
-							<label class="form-label _icon-check">
-								<input placeholder="Company*" type="text" data-required name="company" id="company" autocomplete="off" maxlength="255" data-error="Error" class="input">
-							</label>
-							<label class="form-label _icon-check">
-								<input type="text" placeholder="Contact Name*" data-required name="name" id="name" autocomplete="off" maxlength="255" data-error="Error" class="input">
-							</label>
-							<div class="form-data">
-								<label class="form-label _icon-check">
-									<input placeholder="Email*" type="email" data-required name="email" id="email" autocomplete="off" maxlength="255" data-error="Error" class="input">
-								</label>
-								<label class="form-label _icon-check">
-									<input placeholder="Phone*" type="tel" data-required name="tel" id="tel" autocomplete="off" maxlength="255" data-error="Error" class="input">
-								</label>
+						<div class="page__box">
+							<div class="page__img">
+								<picture><source srcset="img/khortytsa.webp" type="image/webp"><img src="img/khortytsa.png" alt="khortytsa"></picture>
 							</div>
-							<label class="form-label form-label-textarea _icon-check">
-								<textarea placeholder="What others vodka do you have in your portfolio?*" data-required name="what" id="what" autocomplete="off" maxlength="255" data-error="Error" class="input"></textarea>
-							</label>
-							<button type="submit" class="button">SUBMIT</button>
-						</form>
-						<p>
-							By hitting submit you agree to receive marketing emails from azary.club and <a href="#">azary.com.au</a> and certify
-							that you are of legal drinking age.
-						</p>
+							<div class="page__form">
+								<div class="page__title">
+									<h1 data-watch-threshold="0.5" data-watch-once data-watch>Sing Up</h1>
+								</div>
+								<form action="files/sendmail/sendmail.php" data-ajax enctype="multipart/form-data" class="form" method="POST">
+									<input type="hidden" name="form_subject" value="Тема листа">
+									<label class="form-label _icon-check">
+										<input placeholder="Company*" type="text" data-required name="company" id="company" autocomplete="off" maxlength="255" data-error="Error" class="input">
+									</label>
+									<label class="form-label _icon-check">
+										<input type="text" placeholder="Contact Name*" data-required name="name" id="name" autocomplete="off" maxlength="255" data-error="Error" class="input">
+									</label>
+									<div class="form-data">
+										<label class="form-label _icon-check">
+											<input placeholder="Email*" type="email" data-required name="email" id="email" autocomplete="off" maxlength="255" data-error="Error" class="input">
+										</label>
+										<label class="form-label _icon-check">
+											<input placeholder="Phone*" type="tel" data-required name="tel" id="tel" autocomplete="off" maxlength="255" data-error="Error" class="input">
+										</label>
+									</div>
+									<label class="form-label form-label-textarea _icon-check">
+										<textarea placeholder="What others vodka do you have in your portfolio?*" data-required name="what" id="what" autocomplete="off" maxlength="255" data-error="Error" class="input"></textarea>
+									</label>
+									<button type="submit" class="button">SUBMIT</button>
+								</form>
+								<p>
+									By hitting submit you agree to receive marketing emails from azary.club and <a href="#">azary.com.au</a> and certify
+									that you are of legal drinking age.
+								</p>
+							</div>
+						</div>
+
 					</div>
 				</div>
 				<div class="page__video">
@@ -110,7 +118,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20240409175645"></script>
+	<script src="js/app.min.js?_v=20240411154241"></script>
 	<script>
 		! function(e, t) {
 			if ("object" == typeof exports && "object" == typeof module) module.exports = t();
