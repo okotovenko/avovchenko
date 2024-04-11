@@ -1282,6 +1282,14 @@ body {
     max-width: 18.75rem;
   }
 
+  .page__box {
+    background: transparent;
+  }
+
+  .page__img {
+    display: none;
+  }
+
   .page__title ::before {
     display: none;
   }
